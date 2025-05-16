@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores da Terra | Autêntica Culinária Italiana</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="flag-stripe green"></div>
+            <div class="flag-stripe white"></div>
+            <div class="flag-stripe red"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <div class="flag-stripe green"></div>
+                    <div class="flag-stripe white"></div>
+                    <div class="flag-stripe red"></div>
+                </div>
+                <div class="logo-text">
+                    <h1>Sabores da Terra</h1>
+                    <p>Culinária Italiana Autêntica</p>
+                </div>
+            </div>
+            <nav>
+                <button id="menu-toggle" aria-label="Menu de navegação">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul id="main-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#galeria" class="nav-link">Galeria</a></li>
+                    <li><a href="#reservas" class="nav-link">Reservas</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-slider swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h2 data-aos="fade-up" data-aos-delay="200">Sabores Autênticos da Itália</h2>
+                        <p data-aos="fade-up" data-aos-delay="400">Uma experiência gastronômica inesquecível no coração da cidade</p>
+                        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
+                            <a href="#reservas" class="btn btn-primary">Faça sua Reserva</a>
+                            <a href="#menu" class="btn btn-outline">Ver Menu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h2 data-aos="fade-up" data-aos-delay="200">Tradição e Excelência</h2>
+                        <p data-aos="fade-up" data-aos-delay="400">Receitas tradicionais italianas com ingredientes selecionados</p>
+                        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
+                            <a href="#reservas" class="btn btn-primary">Faça sua Reserva</a>
+                            <a href="#menu" class="btn btn-outline">Ver Menu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1498579150354-977475b7ea0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h2 data-aos="fade-up" data-aos-delay="200">Ambiente Acolhedor</h2>
+                        <p data-aos="fade-up" data-aos-delay="400">Um pedaço da Itália para você desfrutar com quem ama</p>
+                        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
+                            <a href="#reservas" class="btn btn-primary">Faça sua Reserva</a>
+                            <a href="#menu" class="btn btn-outline">Ver Menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <a href="#sobre">
+                <span class="scroll-arrow"></span>
+                <span class="scroll-text">Descubra</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Sobre o Restaurante -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Nossa História</span>
+                <h2>Tradição e Paixão em Cada Prato</h2>
+                <div class="divider">
+                    <span class="divider-line green"></span>
+                    <span class="divider-line white"></span>
+                    <span class="divider-line red"></span>
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="./img/principal.avif" alt="Interior do restaurante">
+                    <div class="image-accent"></div>
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <p>Fundado em 2005 pela Chef Heloisa Bolognesi, o Sabores da Terra nasceu da paixão por trazer a autêntica culinária italiana para o Brasil. Nossa filosofia é simples: ingredientes frescos, técnicas tradicionais e muito amor em cada prato.</p>
+                    
+                    <p>Nosso restaurante é um pedaço da Itália em sua cidade. Da decoração à música, do aroma ao sabor, tudo foi criado para transportar nossos clientes para as charmosas trattorias italianas.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature" data-aos="fade-up" data-aos-delay="100">
+                            <div class="feature-icon">
+                                <i class="fas fa-wheat-awn"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Massas Artesanais</h3>
+                                <p>Feitas diariamente em nossa cozinha</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature" data-aos="fade-up" data-aos-delay="200">
+                            <div class="feature-icon">
+                                <i class="fas fa-wine-bottle"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Carta de Vinhos</h3>
+                                <p>Seleção exclusiva de vinhos italianos</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature" data-aos="fade-up" data-aos-delay="300">
+                            <div class="feature-icon">
+                                <i class="fas fa-cheese"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Ingredientes Premium</h3>
+                                <p>Importados diretamente da Itália</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature" data-aos="fade-up" data-aos-delay="400">
+                            <div class="feature-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Produtos Orgânicos</h3>
+                                <p>Parceria com produtores locais</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chef-signature" data-aos="fade-up" data-aos-delay="500">
+                        <img src="./img/eu.jpg" alt="Chef Marco Rossi">
+                        <div>
+                            <span> Heloisa Bolognesi</span>
+                            <p>Chef e Proprietária</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="section bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Descubra Nossos Sabores</span>
+                <h2>Nosso Menu</h2>
+                <div class="divider">
+                    <span class="divider-line green"></span>
+                    <span class="divider-line white"></span>
+                    <span class="divider-line red"></span>
+                </div>
+            </div>
+            
+            <div class="menu-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="antipasti">Antipasti</button>
+                <button class="filter-btn" data-filter="primi">Primi Piatti</button>
+                <button class="filter-btn" data-filter="secondi">Secondi Piatti</button>
+                <button class="filter-btn" data-filter="pizzas">Pizzas</button>
+                <button class="filter-btn" data-filter="dolci">Dolci</button>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Antipasti -->
+                <div class="menu-item antipasti" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-item-image">
+                        <img src="./img/Bruschetta al Pomodoro.jpg" alt="Bruschetta al Pomodoro">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Bruschetta al Pomodoro</h3>
+                        <p>Pão italiano grelhado com tomates frescos, manjericão e azeite extra virgem</p>
+                        <span class="price">R$ 139</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item antipasti" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-item-image">
+                        <img src="./img/Carpaccio di Manzo 2.jpg" alt="Carpaccio di Manzo">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Carpaccio di Manzo</h3>
+                        <p>Finas fatias de filé mignon cru com rúcula, parmesão e molho de alcaparras</p>
+                        <span class="price">R$ 198</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item antipasti" data-aos="fade-up" data-aos-delay="300">
+                    <div class="menu-item-image">
+                        <img src="./img/Burrata con Prosciutto.jpg" alt="Burrata con Prosciutto">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Burrata con Prosciutto</h3>
+                        <p>Burrata cremosa servida com presunto de Parma, tomates confitados e rúcula selvagem</p>
+                        <span class="price">R$ 108</span>
+                    </div>
+                </div>
+                
+                <!-- Primi Piatti -->
+                <div class="menu-item primi" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-item-image">
+                        <img src="./img/Risotto ai Funghi Porcini.jpg" alt="Risotto ai Funghi Porcini">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Risotto ai Funghi Porcini</h3>
+                        <p>Risoto cremoso com cogumelos porcini e finalizado com trufa negra</p>
+                        <span class="price">R$ 120</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item primi" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-item-image">
+                        <img src="./img/Tagliatelle al Tartufo.jpg" alt="Tagliatelle al Tartufo">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Tagliatelle al Tartufo</h3>
+                        <p>Massa fresca com creme de trufas brancas e lascas de parmesão envelhecido</p>
+                        <span class="price">R$ 159</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item primi" data-aos="fade-up" data-aos-delay="300">
+                    <div class="menu-item-image">
+                        <img src="./img/Spaghetti alle Vongole.jpg" alt="Spaghetti alle Vongole">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Spaghetti alle Vongole</h3>
+                        <p>Espaguete com vôngoles frescas, alho, vinho branco, azeite e salsinha</p>
+                        <span class="price">R$ 167</span>
+                    </div>
+                </div>
+                
+                <!-- Secondi Piatti -->
+                <div class="menu-item secondi" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-item-image">
+                        <img src="./img/Ossobuco alla Milanese.jpg" alt="Ossobuco alla Milanese">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Ossobuco alla Milanese</h3>
+                        <p>Ossobuco de vitela cozido lentamente com legumes, ervas e vinho branco</p>
+                        <span class="price">R$ 120</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item secondi" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-item-image">
+                        <img src="./img/Branzino al Forno.jpg" alt="Branzino al Forno">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Branzino al Forno</h3>
+                        <p>Robalo assado com ervas mediterrâneas, limão siciliano e azeite de oliva</p>
+                        <span class="price">R$ 210</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item secondi" data-aos="fade-up" data-aos-delay="300">
+                    <div class="menu-item-image">
+                        <img src="./img/Saltimbocca alla Romana.jpg" alt="Saltimbocca alla Romana">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Saltimbocca alla Romana</h3>
+                        <p>Escalopes de vitela com presunto de Parma e sálvia, salteados em manteiga e vinho branco</p>
+                        <span class="price">R$ 158</span>
+                    </div>
+                </div>
+                
+                <!-- Pizzas -->
+                <div class="menu-item pizzas" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-item-image">
+                        <img src="./img/Pizza Margherita.jpg" alt="Pizza Margherita">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Pizza Margherita</h3>
+                        <p>Molho de tomate, mussarela de búfala, manjericão fresco e azeite extra virgem</p>
+                        <span class="price">R$ 122</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item pizzas" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-item-image">
+                        <img src="./img/Pizza Quattro Formaggi.jpg" alt="Pizza Quattro Formaggi">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Pizza Quattro Formaggi</h3>
+                        <p>Mussarela, gorgonzola, parmesão e provolone com tomates cereja</p>
+                        <span class="price">R$ 129</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item pizzas" data-aos="fade-up" data-aos-delay="300">
+                    <div class="menu-item-image">
+                        <img src="./img/Pizza Prosciutto e Rucola.jpg" alt="Pizza Prosciutto e Rucola">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Pizza Prosciutto e Rucola</h3>
+                        <p>Mussarela, presunto de Parma, rúcula fresca e lascas de parmesão</p>
+                        <span class="price">R$ 109</span>
+                    </div>
+                </div>
+                
+                <!-- Dolci -->
+                <div class="menu-item dolci" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-item-image">
+                        <img src="./img/Tiramisù Classico.jpg" alt="Tiramisù Classico">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Tiramisù Classico</h3>
+                        <p>Clássico italiano com camadas de biscoito champagne, café, mascarpone e cacau</p>
+                        <span class="price">R$ 38</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item dolci" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-item-image">
+                        <img src="./img/Panna Cotta ai Frutti di Bosco.jpg" alt="Panna Cotta ai Frutti di Bosco">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Panna Cotta ai Frutti di Bosco</h3>
+                        <p>Creme de baunilha com calda de frutas vermelhas frescas</p>
+                        <span class="price">R$ 36</span>
+                    </div>
+                </div>
+                
+                <div class="menu-item dolci" data-aos="fade-up" data-aos-delay="300">
+                    <div class="menu-item-image">
+                        <img src="./img/Cannoli Siciliani.jpg" alt="Cannoli Siciliani">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Cannoli Siciliani</h3>
+                        <p>Massa crocante recheada com creme de ricota, pistache e gotas de chocolate</p>
+                        <span class="price">R$ 42</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-cta" data-aos="fade-up">
+                <a href="#" class="btn btn-primary" id="menu-pdf-btn">Download Menu Completo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Momentos Especiais</span>
+                <h2>Nossa Galeria</h2>
+                <div class="divider">
+                    <span class="divider-line green"></span>
+                    <span class="divider-line white"></span>
+                    <span class="divider-line red"></span>
+                </div>
+            </div>
+            
+            <div class="gallery-container" data-aos="fade-up">
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="./img/1.jpg" alt="Ambiente do restaurante">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="./img/2.jpg" alt="Mesa posta">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="./img/3.jpg" alt="Preparo de massa">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="./img/5.jpg" alt="Vinho sendo servido">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="./img/4.jpg" alt="Prato finalizado">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600">
+                    <img src="https://images.unsplash.com/photo-1481931098730-318b6f776db0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Clientes no restaurante">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Lightbox -->
+            <div class="lightbox">
+                <span class="lightbox-close">&times;</span>
+                <div class="lightbox-content">
+                    <img src="/placeholder.svg" alt="" class="lightbox-image">
+                    <div class="lightbox-caption"></div>
+                </div>
+                <span class="lightbox-prev">&lsaquo;</span>
+                <span class="lightbox-next">&rsaquo;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sistema de Reservas -->
+    <section id="reservas" class="section bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Reserve Sua Mesa</span>
+                <h2>Faça Sua Reserva</h2>
+                <p>Reserve sua mesa e garanta uma experiência gastronômica inesquecível</p>
+                <div class="divider">
+                    <span class="divider-line green"></span>
+                    <span class="divider-line white"></span>
+                    <span class="divider-line red"></span>
+                </div>
+            </div>
+            
+            <div id="reservation-system">
+                <form id="reservation-form" novalidate>
+                    <!-- Seção 1: Dados Pessoais -->
+                    <div class="form-section">
+                        <h3>Dados Pessoais</h3>
+                        
+                        <div class="form-group">
+                            <label for="nome">Nome Completo*</label>
+                            <input type="text" id="nome" name="nome" required aria-required="true" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]{3,}" title="Por favor, insira seu nome completo (mínimo 3 caracteres)">
+                            <span class="error-message">Por favor, insira seu nome completo</span>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email*</label>
+                                <input type="email" id="email" name="email" required aria-required="true">
+                                <span class="error-message">Por favor, insira um email válido</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="telefone">Telefone*</label>
+                                <input type="tel" id="telefone" name="telefone" required aria-required="true" pattern="[0-9\s$$$$\-\+]{10,}" title="Por favor, insira um número de telefone válido">
+                                <span class="error-message">Por favor, insira um telefone válido</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Seção 2: Data e Horário -->
+                    <div class="form-section">
+                        <h3>Data e Horário</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="data">Data da Reserva*</label>
+                                <input type="date" id="data" name="data" required aria-required="true" min="">
+                                <span class="error-message">Por favor, selecione uma data válida</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="horario">Horário da Reserva*</label>
+                                <select id="horario" name="horario" required aria-required="true">
+                                    <option value="">Selecione um horário</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="12:30">12:30</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="13:30">13:30</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="19:30">19:30</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="20:30">20:30</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="21:30">21:30</option>
+                                    <option value="22:00">22:00</option>
+                                </select>
+                                <span class="error-message">Por favor, selecione um horário</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pessoas">Número de Pessoas*</label>
+                            <div class="range-container">
+                                <input type="range" id="pessoas" name="pessoas" min="1" max="10" value="" required aria-required="true">
+                                <div class="range-value">10 pessoas</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
+                    <div class="form-section">
+                        <h3>Mesa e Preferências</h3>
+                        
+                        <div class="form-group">
+                            <label>Escolha sua Mesa*</label>
+                            <div id="table-map">
+                                <div class="table-area">
+                                    <div class="table-row">
+                                        <div class="table" data-table="1">
+                                            <input type="radio" id="mesa-1" name="mesa" value="1" required aria-required="true">
+                                            <label for="mesa-1">1</label>
+                                        </div>
+                                        <div class="table" data-table="2">
+                                            <input type="radio" id="mesa-2" name="mesa" value="2">
+                                            <label for="mesa-2">2</label>
+                                        </div>
+                                        <div class="table" data-table="3">
+                                            <input type="radio" id="mesa-3" name="mesa" value="3">
+                                            <label for="mesa-3">3</label>
+                                        </div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table" data-table="4">
+                                            <input type="radio" id="mesa-4" name="mesa" value="4">
+                                            <label for="mesa-4">4</label>
+                                        </div>
+                                        <div class="table" data-table="5">
+                                            <input type="radio" id="mesa-5" name="mesa" value="5">
+                                            <label for="mesa-5">5</label>
+                                        </div>
+                                        <div class="table" data-table="6">
+                                            <input type="radio" id="mesa-6" name="mesa" value="6">
+                                            <label for="mesa-6">6</label>
+                                        </div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table" data-table="7">
+                                            <input type="radio" id="mesa-7" name="mesa" value="7">
+                                            <label for="mesa-7">7</label>
+                                        </div>
+                                        <div class="table" data-table="8">
+                                            <input type="radio" id="mesa-8" name="mesa" value="8">
+                                            <label for="mesa-8">8</label>
+                                        </div>
+                                        <div class="table" data-table="9">
+                                            <input type="radio" id="mesa-9" name="mesa" value="9">
+                                            <label for="mesa-9">9</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-legend">
+                                    <div><span class="available"></span> Disponível</div>
+                                    <div><span class="selected"></span> Selecionada</div>
+                                    <div><span class="unavailable"></span> Indisponível</div>
+                                </div>
+                            </div>
+                            <span class="error-message">Por favor, selecione uma mesa</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="ocasiao">Ocasião Especial</label>
+                            <select id="ocasiao" name="ocasiao">
+                                <option value="">Selecione (opcional)</option>
+                                <option value="aniversario">Aniversário</option>
+                                <option value="casamento">Aniversário de Casamento</option>
+                                <option value="romantico">Jantar Romântico</option>
+                                <option value="negocios">Reunião de Negócios</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="preferencias">Preferências Gastronômicas</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="pref-massa" name="preferencias" value="massa">
+                                    <label for="pref-massa">Massas</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="pref-peixe" name="preferencias" value="peixe">
+                                    <label for="pref-peixe">Peixes</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="pref-carne" name="preferencias" value="carne">
+                                    <label for="pref-carne">Carnes</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="pref-vinho" name="preferencias" value="vinho">
+                                    <label for="pref-vinho">Vinhos</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="restricoes">Restrições Alimentares</label>
+                            <textarea id="restricoes" name="restricoes" rows="3" placeholder="Informe se você tem alergias ou restrições alimentares"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="observacoes">Observações Adicionais</label>
+                            <textarea id="observacoes" name="observacoes" rows="3" placeholder="Alguma solicitação especial?"></textarea>
+                        </div>
+                        
+                        <div class="form-group terms-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="termos" name="termos" required aria-required="true">
+                                <label for="termos">Concordo com os <a href="#" class="terms-link">termos e condições</a> do restaurante*</label>
+                                <span class="error-message">Você deve concordar com os termos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Confirmar Reserva</button>
+                        </div>
+                    </div>
+                </form>
+
+                    <!-- Adicione esta estrutura no seu HTML dentro da seção de reservas -->
+<div class="contact-info-wrapper">
+  <div class="contact-info-group">
+    <div class="contact-item">
+      <i class="fas fa-phone-alt"></i>
+      <span>(11) 3456-7890</span>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-envelope"></i>
+      <span>reservas@saboresdaterra.com.br</span>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-clock"></i>
+      <span>Seg-Sex: 12h-15h | 19h-23h</span>
+    </div>
+  </div>
+</div>
+                    <!-- Confirmação de Reserva -->
+                    <div id="reservation-confirmation" class="reservation-confirmation hidden">
+                        <div class="confirmation-header">
+                            <div class="italian-flag">
+                                <span class="flag-stripe green"></span>
+                                <span class="flag-stripe white"></span>
+                                <span class="flag-stripe red"></span>
+                            </div>
+                            <h3>Reserva Confirmada!</h3>
+                        </div>
+                        
+                        <div class="confirmation-icon">
+                            <svg viewBox="0 0 52 52" width="70" height="70">
+                                <circle class="success-circle" cx="26" cy="26" r="25" fill="none" />
+                                <path class="success-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                            </svg>
+                        </div>
+                        
+                        <div class="confirmation-details">
+                            <p>Sua reserva foi realizada com sucesso. Enviamos um email de confirmação para <span id="confirmation-email"></span>.</p>
+                            
+                            <div class="details-grid">
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <div>
+                                        <span class="detail-label">Data</span>
+                                        <span id="confirmation-date" class="detail-value"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <div>
+                                        <span class="detail-label">Horário</span>
+                                        <span id="confirmation-time" class="detail-value"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="detail-item">
+                                    <i class="fas fa-users"></i>
+                                    <div>
+                                        <span class="detail-label">Pessoas</span>
+                                        <span id="confirmation-people" class="detail-value"></span>
+                                    </div>
+                                </div>
+                                
+                                <div class="detail-item">
+                                    <i class="fas fa-tag"></i>
+                                    <div>
+                                        <span class="detail-label">Código</span>
+                                        <span id="reservation-code" class="detail-value"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <p class="confirmation-message">Agradecemos a preferência e esperamos recebê-lo em breve no Sabores da Terra!</p>
+                        </div>
+                        
+                        <div class="confirmation-actions">
+                            <button type="button" class="btn btn-primary" id="new-reservation-btn">Nova Reserva</button>
+                            <a href="#menu" class="btn btn-outline">Ver Menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Fale Conosco</span>
+                <h2>Contato</h2>
+                <div class="divider">
+                    <span class="divider-line green"></span>
+                    <span class="divider-line white"></span>
+                    <span class="divider-line red"></span>
+                </div>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Endereço</h3>
+                            <p>Rua das Oliveiras, 123 - Centro</p>
+                            <p>São Paulo - SP, 01310-000</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Horário de Funcionamento</h3>
+                            <p>Segunda a Sexta: 12h às 15h | 19h às 23h</p>
+                            <p>Sábados e Domingos: 12h às 16h | 19h às 00h</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Contato</h3>
+                            <p>Telefone: (11) 3456-7890</p>
+                            <p>Email: contato@saboresdaterra.com.br</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="TripAdvisor" class="social-link"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-map" data-aos="fade-left">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1976900292304!2d-46.65429492534724!3d-23.56361227874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1682345678901!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content" data-aos="fade-up">
+                <h3>Inscreva-se em nossa Newsletter</h3>
+                <p>Receba novidades, promoções e eventos especiais diretamente em seu email.</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" placeholder="Seu email" required>
+                    <button type="submit" class="btn btn-primary">Inscrever-se</button>
+                </form>
+                <div id="newsletter-success" class="hidden">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Obrigado por se inscrever! Em breve você receberá nossas novidades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon footer-logo-icon">
+                        <div class="flag-stripe green"></div>
+                        <div class="flag-stripe white"></div>
+                        <div class="flag-stripe red"></div>
+                    </div>
+                    <h2>Sabores da Terra</h2>
+                    <p>Culinária Italiana Autêntica</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                        <li><a href="#reservas">Reservas</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua das Oliveiras, 123 - Centro</p>
+                    <p><i class="fas fa-phone"></i> (11) 3456-7890</p>
+                    <p><i class="fas fa-envelope"></i> contato@saboresdaterra.com.br</p>
+                </div>
+                
+                <div class="footer-hours">
+                    <h3>Horário de Funcionamento</h3>
+                    <p><span>Segunda a Sexta:</span> 12h às 15h | 19h às 23h</p>
+                    <p><span>Sábados e Domingos:</span> 12h às 16h | 19h às 00h</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Sabores da Terra. Todos os direitos reservados.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <a href="#" id="back-to-top" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Modal de Termos e Condições -->
+    <div id="terms-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Termos e Condições</h2>
+            <div class="modal-body">
+                <h3>Política de Reservas</h3>
+                <p>Ao fazer uma reserva no Sabores da Terra, você concorda com os seguintes termos:</p>
+                <ul>
+                    <li>As reservas devem ser feitas com pelo menos 2 horas de antecedência.</li>
+                    <li>Tolerância de atraso de 15 minutos, após esse período a reserva poderá ser cancelada.</li>
+                    <li>Cancelamentos devem ser feitos com pelo menos 3 horas de antecedência.</li>
+                    <li>Para grupos acima de 8 pessoas, é necessário contato direto pelo telefone.</li>
+                </ul>
+                
+                <h3>Política de Privacidade</h3>
+                <p>Os dados fornecidos serão utilizados exclusivamente para:</p>
+                <ul>
+                    <li>Confirmação e gerenciamento da sua reserva.</li>
+                    <li>Contato em caso de alterações ou cancelamentos.</li>
+                    <li>Envio de promoções e novidades, caso você opte por recebê-las.</li>
+                </ul>
+                
+                <h3>Política de Pagamento</h3>
+                <p>O Sabores da Terra aceita as seguintes formas de pagamento:</p>
+                <ul>
+                    <li>Dinheiro</li>
+                    <li>Cartões de crédito e débito</li>
+                    <li>Pix</li>
+                </ul>
+                
+                <p>Para mais informações, entre em contato pelo telefone (11) 3456-7890 ou pelo email contato@saboresdaterra.com.br.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
